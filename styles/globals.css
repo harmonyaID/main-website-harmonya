@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -8,9 +12,50 @@ body {
 
 a {
   color: inherit;
+  @apply text-lg;
   text-decoration: none;
 }
 
 * {
   box-sizing: border-box;
+}
+
+.hamburger span {
+  width: 35px;
+  height: 4px;
+  background: #232323;
+  border-radius: 20px;
+}
+
+.hamburger span:nth-child(2) {
+  transform: translateY(8px);
+  width: 30px;
+}
+
+.section-title {
+  font-size: 3rem;
+}
+
+@layer components{
+
+  .blinking-cursor:after {
+    content: '|';
+
+    animation: blink 1s step-start infinite;
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+}
+
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
 }
