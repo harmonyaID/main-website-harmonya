@@ -11,7 +11,7 @@ import Blob from '../components/Blob';
 
 function Footer() {
   return (
-    <div className="max-h-screen max-w-xl px-[2rem]">
+    <div className="max-h-screen max-w-xl px-[2rem] items-center flex flex-col justify-center">
       <div className="flex flex-col text-center mt-[6rem] mb-10">
         <h2 className="font-bold section-title text-gray-900">
           Need Help With Your Projects?
