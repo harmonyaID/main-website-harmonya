@@ -40,17 +40,17 @@ function Navbar() {
               Home
             </a>
           </NextLink>
-          <NextLink href="/">
+          <NextLink href="/about">
             <a className="transition duration-150 text-gray-600 font-semibold border-b-2 border-transparent hover:border-b-2 hover:border-blue-700">
               About
             </a>
           </NextLink>
-          <NextLink href="/">
+          <NextLink href="/works">
             <a className="transition duration-150 text-gray-600 font-semibold border-b-2 border-transparent hover:border-b-2 hover:border-blue-700">
               Works
             </a>
           </NextLink>
-          <NextLink href="/">
+          <NextLink href="/contact">
             <a className="font-semibold tracking-wide border-2 border-gray-600 text-gray-600 py-2 px-4 rounded-xl hover:bg-blue-700 hover:border-blue-700 hover:text-white transition duration-150">
               Get in Touch
             </a>
@@ -102,7 +102,7 @@ function Navbar() {
               </NextLink>
             </li>
             <li onClick={handleClick}>
-              <NextLink href="/projects">
+              <NextLink href="/works">
                 <a className="font-semibold text-2xl inline-flex px-6 py-2 transition hover:bg-gray-100 w-full text-gray-600">
                   Works
                 </a>

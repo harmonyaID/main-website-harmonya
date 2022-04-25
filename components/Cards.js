@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 function Cards({ title, desc, img }) {
   return (
-    <div className="bg-white w-[300px] md:w-[200px] lg:w-[300px] mb-10 relative rounded-xl shadow-md hover:shadow-xl transition duration-150">
+    <div className="bg-white w-[300px] md:w-[200px] lg:w-[300px] relative rounded-xl shadow-md hover:shadow-xl transition duration-150">
       <Image
         src={img}
         alt="image"

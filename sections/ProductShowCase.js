@@ -7,7 +7,7 @@ function ProductShowCase() {
     <div className="bg-blue-700 p-10 flex justify-center">
       <div className="flex flex-col items-center justify-center w-full max-w-[1200px]">
         <div>
-          <h2 className="section-title mt-10 font-bold text-2xl md:text-4xl lg:text-[10rem] text-white uppercase mb-10">
+          <h2 className="section-title mt-10 font-bold text-2xl md:text-4xl lg:text-[6rem] text-white uppercase mb-10">
             Our Works
           </h2>
         </div>
