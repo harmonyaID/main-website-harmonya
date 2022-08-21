@@ -22,7 +22,7 @@ function Hero() {
             {typeWriter}
           </span>
         </p>
-        <div className="mt-12 flex gap-4 items-center">
+        <div className="mt-12 flex gap-4 flex-col md:flex-row items-center">
           <Link href="">
             <a className="border-2 border-blue-700 bg-blue-700 text-white py-2 px-4 rounded-xl hover:scale-90 hover:shadow-md transition duration-150 tracking-wide uppercase text-sm lg:text-lg">
               Contact Us

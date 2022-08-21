@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 function Clients() {
   return (
-    <div className="mb-[4rem] flex justify-center items-center w-100 px-[2rem] z-0">
+    <div className="mt-[5rem] mb-[4rem] flex justify-center items-center w-100 px-[2rem] z-0">
       <div className="flex gap-2 lg:gap-10 justify-between w-[900px] items-center">
         <Image
           src="/assets/images/clients/Blublub-Logo.png"
