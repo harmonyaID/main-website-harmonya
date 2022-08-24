@@ -36,22 +36,22 @@ function Navbar() {
         </div>
         <div className="gap-6 hidden lg:inline-flex items-center">
           <NextLink href="/">
-            <a className="transition duration-150 text-gray-600 font-semibold border-b-2 border-transparent hover:border-b-2 hover:border-blue-700">
+            <a className="transition duration-500 text-gray-600 font-semibold border-b-2 border-transparent hover:border-b-2 hover:border-blue-700">
               Home
             </a>
           </NextLink>
           <NextLink href="/about">
-            <a className="transition duration-150 text-gray-600 font-semibold border-b-2 border-transparent hover:border-b-2 hover:border-blue-700">
+            <a className="transition duration-500 text-gray-600 font-semibold border-b-2 border-transparent hover:border-b-2 hover:border-blue-700">
               About
             </a>
           </NextLink>
           <NextLink href="/works">
-            <a className="transition duration-150 text-gray-600 font-semibold border-b-2 border-transparent hover:border-b-2 hover:border-blue-700">
+            <a className="transition duration-500 text-gray-600 font-semibold border-b-2 border-transparent hover:border-b-2 hover:border-blue-700">
               Works
             </a>
           </NextLink>
           <NextLink href="/contact">
-            <a className="font-semibold tracking-wide border-2 border-gray-600 text-gray-600 py-2 px-4 rounded-xl hover:bg-blue-700 hover:border-blue-700 hover:text-white transition duration-150">
+            <a className="font-semibold tracking-wide border-2 border-gray-600 text-gray-600 py-2 px-4 rounded-xl hover:bg-blue-700 hover:border-blue-700 hover:text-white transition duration-500">
               Get in Touch
             </a>
           </NextLink>
@@ -71,8 +71,8 @@ function Navbar() {
         <div
           className={
             sidebar
-              ? 'bg-white fixed duration-300 inset-y-0 py-4 right-0 w-64 z-50'
-              : 'bg-white fixed duration-300 inset-y-0 py-4 -right-full w-64 z-0'
+              ? 'bg-white fixed duration-500 inset-y-0 py-4 right-0 w-64 z-50'
+              : 'bg-white fixed duration-500 inset-y-0 py-4 -right-full w-64 z-0'
           }
         >
           <ul>

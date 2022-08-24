@@ -9,7 +9,7 @@ function Cards({ title, desc, img }) {
         width={500}
         height={300}
         objectFit="cover"
-        className="hover:scale-125 transition duration-150 rounded-t-xl"
+        className="hover:scale-125 transition duration-500 rounded-t-xl"
       />
       <div className="p-8">
         <h2 className="mt-4 font-semibold text-xl text-blue-700">{title}</h2>
