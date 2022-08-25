@@ -9,7 +9,7 @@ function Hero() {
   return (
     <div className="px-[2rem] mt-10">
       <div className="flex flex-col items-center justify-center text-center h-[70vh] md:h-[100vh]">
-        <h1 className="font-bold text-5xl md:max-w-md lg:text-7xl lg:max-w-2xl xl:text-8xl xl:max-w-4xl">
+        <h1 className="font-bold text-4xl md:max-w-md lg:text-6xl lg:max-w-2xl xl:text-7xl xl:max-w-4xl">
           <span className="text-blue-700">BIG</span> changes starts with small
           steps!
         </h1>
