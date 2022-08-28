@@ -1,8 +1,10 @@
 import Head from 'next/head';
-import Footer from '../sections/Footer';
-import Navbar from '../components/Navbar';
+import Footer from '../../sections/Footer';
+import Navbar from '../../components/Navbar';
 
-import ShowList from '../components/works/ShowList';
+import ShowList from '../../components/works/ShowList';
+import { portoData } from '../../lib/portofolioList';
+import Link from 'next/link';
 
 function works() {
   return (
@@ -30,7 +32,14 @@ function works() {
           </div>
 
           <div className='py-10 px-12'>
-            LIST
+            <h2>Portofolio List</h2>
+            {portoData.map((data, index) => (
+                <Link href={'/works' + data.path} key={index}>
+                    <a className='text-blue-700'>
+                        <h3 className='text-blue-700'>{data.title}</h3>
+                    </a>
+                </Link>
+            ))}
           </div>
         </div>
       </main>

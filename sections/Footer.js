@@ -20,7 +20,7 @@ function Footer() {
           No need to worry! we are here to help you out!
         </p>
         <div className="mt-2 flex gap-4 items-center justify-center max-w-md z-10">
-          <Link href="">
+          <Link href="/contact">
             <a className="border-2 font-bold border-gray-600 bg-transparent text-gray-600 py-4 px-6 rounded-xl hover:bg-blue-700 hover:text-white hover:shadow-md hover:scale-90 hover:border-blue-700 transition duration-500 tracking-wide uppercase text-sm lg:text-lg">
               Get in Touch
             </a>

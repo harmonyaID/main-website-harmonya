@@ -11,7 +11,7 @@ const Oops = () => {
           OOPS!
         </h2>
         <p className="text-lg text-gray-600">The page is not found!</p>
-        <p className="text-lg text-gray-600">Please go backz!</p>
+        <p className="text-lg text-gray-600">Please go back!</p>
         <div className="mt-10">
           <Link href="/">
             <a className="border-2 py-2 px-4 rounded-xl border-gray-600 hover:bg-indigo-500 hover:text-white hover:border-indigo-500 transition duration-150">
