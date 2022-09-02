@@ -3,6 +3,7 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../sections/Footer";
 
 import { portoData } from "../../lib/portofolioList";
+import ShowList from "../../components/works/ShowList";
 
 const Portofolio = () => {
     return (
@@ -15,8 +16,8 @@ const Portofolio = () => {
 
             <Navbar />
 
-            <h1>{ portoData.title }</h1>
-            <p>{ portoData.desc }</p>
+            {/* <h1>{ portoData.title }</h1>
+            <p>{ portoData.desc }</p> */}
 
             <footer className="flex flex-col justify-center">
                 <Footer />

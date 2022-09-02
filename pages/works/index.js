@@ -33,13 +33,27 @@ function works() {
 
           <div className='py-10 px-12'>
             <h2>Portofolio List</h2>
-            {portoData.map((data, index) => (
+            <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-7xl">
+              <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
+              {
+                portoData?.map((data, index) => (
+                  <ShowList key={index}
+                    image={data.img}
+                    title={data.title}
+                    desc={data.desc}
+                    tags={data.tags}
+                    path={data.path} />
+                ))
+              }
+              </div>
+            </div>
+            {/* {portoData.map((data, index) => (
                 <Link href={'/works' + data.path} key={index}>
                     <a className='text-blue-700'>
                         <h3 className='text-blue-700'>{data.title}</h3>
                     </a>
                 </Link>
-            ))}
+            ))} */}
           </div>
         </div>
       </main>
