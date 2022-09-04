@@ -14,7 +14,7 @@ function Hero() {
           steps!
         </h1>
         <div className="relative top-5 left-1/4 w-full max-w-sm max-h-screen">
-          <div className="absolute -bottom-12 left-7 lg:left-20 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 md:animate-blob animation-delay-4000"></div>
+          <div className="absolute -bottom-12 left-7 lg:left-20 w-72 h-72 bg-fuchsia-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 md:animate-blob animation-delay-4000"></div>
         </div>
         <p className="mt-10 text-xl text-gray-600 lg:text-2xl xl:text-3xl flex flex-col">
           What do we do?

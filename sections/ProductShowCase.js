@@ -13,19 +13,19 @@ function ProductShowCase() {
         </div>
         <div className="flex flex-col gap-2 mt-10 md:flex-row">
           <Cards
-            title="Casa Blanca Restaurant"
-            desc="A luxury restaurant website with menu page and reservation features"
-            img="https://source.unsplash.com/IyaNci0CyRk"
+            title="Armory Reborn"
+            desc="Up to date news portal. Be the first to know what happened curently"
+            img="/assets/images/porto/Armory-Reborn.jpg"
           />
           <Cards
-            title="Koonekin"
-            desc="One stop connect. Connecting all your social networks with 1 link"
-            img="https://source.unsplash.com/fg7J6NnebBc"
+            title="Blublub E-Commerce"
+            desc="E-commerce for diving spot and accessories. Easy way to enjoy your diving trip"
+            img="/assets/images/porto/Blublub.jpg"
           />
           <Cards
-            title="VBM System"
-            desc="Real Estate Company Web app"
-            img="https://source.unsplash.com/FeuEg-8XlA8"
+            title="Ticket To The Moon"
+            desc="E-commerce for Hammock. The best quality Hammock in Bali"
+            img="/assets/images/porto/TicketToTheMoon.jpg"
           />
         </div>
       </div>

@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { useState } from "react"
+import Cards from "../Cards";
 
 const cn = (...classes) => {
     return classes.filter(Boolean).join(' ');
@@ -7,8 +8,6 @@ const cn = (...classes) => {
 
 const ShowList = ({ image, title, desc, tags, path }) => {
     const [isLoading, setIsLoading] = useState(true);
-
-    console.log(path)
 
     return (
         <a href={'http://localhost:3000/works' + path} className="group">
@@ -28,7 +27,7 @@ const ShowList = ({ image, title, desc, tags, path }) => {
                 />
             </div>
             <h4 className="mt-4 text-xs text-blue-300">{tags.join(', ')}</h4>
-            <h3 className="mt-1 text-lg font-medium text-gray-900">{title}</h3>
+            <h3 className="mt-2 font-semibold text-xl text-blue-700">{title}</h3>
             <p className="text-gray-800 mt-1 text-sm">{desc}</p>
         </a>
     )

@@ -13,8 +13,8 @@ function Cta() {
         voluptate sequi nostrum consectetur.
       </p>
       <div className="flex justify-center">
-        <Link href="">
-          <a className="border-2 border-blue-700 bg-blue-700 text-white py-2 px-4 rounded-xl hover:bg-blue-700 hover:shadow-md hover:scale-90 transition duration-500 tracking-wide uppercase text-sm lg:text-lg">
+        <Link href="https://www.harmonya.id/file/Portfolio-2022.pdf">
+          <a target="_blank" className="border-2 border-blue-700 bg-blue-700 text-white py-2 px-4 rounded-xl hover:bg-blue-700 hover:shadow-md hover:scale-90 transition duration-500 tracking-wide uppercase text-sm lg:text-lg">
             Download Portofolio
           </a>
         </Link>
