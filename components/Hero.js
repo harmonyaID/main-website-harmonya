@@ -23,13 +23,13 @@ function Hero() {
           </span>
         </p>
         <div className="mt-12 flex gap-4 flex-col md:flex-row items-center">
-          <Link href="">
+          <Link href="/contact">
             <a className="border-2 border-blue-700 bg-blue-700 text-white py-2 px-4 rounded-xl hover:scale-90 hover:shadow-md transition duration-500 tracking-wide uppercase text-sm lg:text-lg">
               Contact Us
             </a>
           </Link>
-          <Link href="">
-            <a className="border-2 border-gray-600 bg-transparent text-gray-600 py-2 px-4 rounded-xl hover:bg-blue-700 hover:text-white hover:shadow-md hover:scale-90 hover:border-blue-700 transition duration-500 tracking-wide uppercase text-sm lg:text-lg">
+          <Link href="https://www.harmonya.id/file/Portfolio-2022.pdf">
+            <a className="border-2 border-gray-600 bg-transparent text-gray-600 py-2 px-4 rounded-xl hover:bg-blue-700 hover:text-white hover:shadow-md hover:scale-90 hover:border-blue-700 transition duration-500 tracking-wide uppercase text-sm lg:text-lg" target="_blank" >
               Portofolio
             </a>
           </Link>
