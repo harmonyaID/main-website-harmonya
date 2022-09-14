@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import NextLink from 'next/link';
+import Link from 'next/link';
 import Cards from '../components/Cards';
 
 function ProductShowCase() {
@@ -27,6 +27,14 @@ function ProductShowCase() {
             desc="E-commerce for Hammock. The best quality Hammock in Bali"
             img="/assets/images/porto/TicketToTheMoon.jpg"
           />
+        </div>
+
+        <div className="mt-12 flex gap-4 flex-col md:flex-row items-center">
+          <Link href="/works">
+            <a className="border-2 border-white-700 bg-white text-blue-700 py-2 px-4 rounded-xl hover:scale-90 hover:shadow-md hover:bg-blue-700 hover:text-white transition duration-500 tracking-wide uppercase text-sm lg:text-lg">
+              See More
+            </a>
+          </Link>
         </div>
       </div>
     </div>

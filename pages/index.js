@@ -23,12 +23,12 @@ export default function Home() {
       <Services />
 
       <main className="items-center justify-center z-0">
-        <section className="py-[4rem]">
-          <About />
-        </section>
-        {/* <Animation /> */}
         <section>
           <ProductShowCase Data={Data} />
+        </section>
+       
+        <section className="py-[4rem]">
+          <About />
         </section>
       </main>
 
