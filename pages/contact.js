@@ -50,9 +50,21 @@ function contact() {
                     className="cursor-pointer items-center"
                   />
                   </li>
-                  <li className='flex mb-6 items-center gap-6'><FontAwesomeIcon icon={faPhone} className="w-5" /> {ContactDetails.phone}</li>
-                  <li className='flex mb-6 items-center gap-6'><FontAwesomeIcon icon={faEnvelope} className="w-5" /> {ContactDetails.email}</li>
-                  <li className='flex mb-6 items-center gap-6'><FontAwesomeIcon icon={faMapLocationDot} className="w-5" /> {ContactDetails.addres}</li>
+                  <li className='flex mb-6 items-center gap-6'>
+                    <a className="flex gap-5" target="_blank" rel="noreferrer noopener" href="https://wa.me/6282145999059">
+                      <FontAwesomeIcon icon={faPhone} className="w-5" /> {ContactDetails.phone}
+                    </a>
+                  </li>
+                  <li className='flex mb-6 items-center gap-7'>
+                    <a className='flex gap-5' target="_blank" rel="noreferrer noopener" href="mailto:hello@hamonya.id">
+                      <FontAwesomeIcon icon={faEnvelope} className="w-5" /> {ContactDetails.email}
+                    </a>
+                  </li>
+                  <li className='flex mb-6 items-center gap-7'>
+                    <a className='flex gap-5' target="_blank" rel="noreferrer noopener" href="https://goo.gl/maps/UBr69tA71fs5Ttrx6">
+                      <FontAwesomeIcon icon={faMapLocationDot} className="w-5" />{ContactDetails.addres}
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>

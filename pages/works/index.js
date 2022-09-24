@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Footer from '../../sections/Footer';
 import Navbar from '../../components/Navbar';
+import { motion } from 'framer-motion'
 
 import ShowList from '../../components/works/ShowList';
 import { portoData } from '../../lib/portofolioList';
@@ -33,7 +34,20 @@ function works() {
 
           <div className='px-12'>
             <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-7xl">
-              <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
+                {
+                  portoData?.map((item, index) => (
+                    <div key={index} className="w-100 mb-24 relative">
+                      <motion.h3 initial={{ opacity: 0, x:-100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ type: "spring", bounce: 0.4, duration: 3 }} viewport={{ once: true }} className="text-3xl text-white shadow-lg absolute top-10 z-10 p-10 bg-blue-600">{item.title}</motion.h3>
+                      <Link href={'works/' + item.path}>
+                        <a>
+                          <motion.img initial={{ opacity: 0, y:-100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ type: "spring", bounce: 0.4, duration: 2 }} viewport={{ once: true }} src={item.img} alt="armory reborn" className='p-20 rounded-xl grayscale hover:grayscale-0 transition duration-500' title='Armory Reborn'/>
+                        </a>
+                      </Link>
+                      <motion.p initial={{ opacity: 0, x:+100 }} whileInView={{ opacity: 1, x: 0, duration: 6 }} transition={{ type: "spring", bounce: 0.4, duration: 4 }} viewport={{ once: true }} className="text-md text-gray-500 p-12 shadow-xl absolute bottom-10 right-0 max-w-sm bg-white">{item.desc}</motion.p>
+                    </div>
+                  ))
+                }
+              {/* <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
               {
                 portoData?.map((data, index) => (
                   <ShowList key={index}
@@ -44,7 +58,7 @@ function works() {
                     path={data.path} />
                 ))
               }
-              </div>
+              </div> */}
             </div>
             {/* {portoData.map((data, index) => (
                 <Link href={'/works' + data.path} key={index}>

@@ -1,7 +1,7 @@
 export const ContactDetails = {
-    phone: "+6281558880043",
-    email: "info@harmonya.com",
-    addres: "Jl. Graha Parta Lestari, Padangsambian Klod, Kec. Denpasar Bar., Kota Denpasar, Bali 80117"
+    phone: "+62 821-4599-9059",
+    email: "hello@harmonya.id",
+    addres: "Jl. Beringin No 109, Br. Batulumbung, Desa Dalung, Kuta Utara, Badung - Bali"
 };
 
 export const ServiceOptions = {
