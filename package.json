@@ -23,6 +23,8 @@
     "react-flickity-component": "^3.6.3",
     "react-masonry-component": "^6.3.0",
     "react-simple-typewriter": "^3.0.1",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
     "typewriter-effect": "^2.18.2"
   },
   "devDependencies": {

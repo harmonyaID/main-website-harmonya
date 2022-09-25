@@ -33,17 +33,38 @@ function works() {
           </div>
 
           <div className='px-12'>
-            <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-7xl">
+            <div className="mx-auto max-w-2xl py-4 md:py-12 lg:max-w-7xl">
                 {
                   portoData?.map((item, index) => (
                     <div key={index} className="w-100 mb-24 relative">
-                      <motion.h3 initial={{ opacity: 0, x:-100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ type: "spring", bounce: 0.4, duration: 3 }} viewport={{ once: true }} className="text-3xl text-white shadow-lg absolute top-10 z-10 p-10 bg-blue-600">{item.title}</motion.h3>
+                      <motion.h3 
+                        initial={{ opacity: 0, x:-100 }} 
+                        whileInView={{ opacity: 1, x: 0 }} 
+                        transition={{ type: "spring", bounce: 0.4, duration: 3 }} 
+                        viewport={{ once: false, amount: 1 }} 
+                        className=" text-white md:text-2xl shadow-xl p-2 md:p-10 md:absolute top-10 z-10  bg-blue-600">
+                          {item.title}
+                      </motion.h3>
                       <Link href={'works/' + item.path}>
                         <a>
-                          <motion.img initial={{ opacity: 0, y:-100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ type: "spring", bounce: 0.4, duration: 2 }} viewport={{ once: true }} src={item.img} alt="armory reborn" className='p-20 rounded-xl grayscale hover:grayscale-0 transition duration-500' title='Armory Reborn'/>
+                          <motion.img 
+                            initial={{ opacity: 0 }} 
+                            whileInView={{ opacity: 1 }} 
+                            transition={{ type: "spring", bounce: 0.4, duration: 2 }} 
+                            viewport={{ once: false, amount: 0.1 }} 
+                            src={item.img} 
+                            alt="armory reborn" 
+                            className='rounded-xl grayscale md:p-10 lg:p-20 hover:grayscale-0 transition duration-500' title={item.title}/>
                         </a>
                       </Link>
-                      <motion.p initial={{ opacity: 0, x:+100 }} whileInView={{ opacity: 1, x: 0, duration: 6 }} transition={{ type: "spring", bounce: 0.4, duration: 4 }} viewport={{ once: true }} className="text-md text-gray-500 p-12 shadow-xl absolute bottom-10 right-0 max-w-sm bg-white">{item.desc}</motion.p>
+                      <motion.p 
+                        initial={{ opacity: 0, x:+100 }} 
+                        whileInView={{ opacity: 1, x: 0, duration: 6 }} 
+                        transition={{ type: "spring", bounce: 0.4, duration: 4 }} 
+                        viewport={{ once: false, amount: 0.5 }} 
+                        className=" text-gray-500 p-2 md:p-10 shadow-xl md:bottom-10 md:absolute bottom-10 right-0 max-w-sm bg-white">
+                          {item.desc}
+                      </motion.p>
                     </div>
                   ))
                 }
