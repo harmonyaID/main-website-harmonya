@@ -1,6 +1,7 @@
 import Image from 'next/image';
-import NextLink from 'next/link';
+import Link from 'next/link';
 import Cards from '../components/Cards';
+import { motion } from 'framer-motion'
 
 function ProductShowCase() {
   return (
@@ -11,22 +12,56 @@ function ProductShowCase() {
             Our Works
           </h2>
         </div>
-        <div className="flex flex-col gap-2 mt-10 md:flex-row">
-          <Cards
-            title="Casa Blanca Restaurant"
-            desc="A luxury restaurant website with menu page and reservation features"
-            img="https://source.unsplash.com/IyaNci0CyRk"
-          />
-          <Cards
-            title="Koonekin"
-            desc="One stop connect. Connecting all your social networks with 1 link"
-            img="https://source.unsplash.com/fg7J6NnebBc"
-          />
-          <Cards
-            title="VBM System"
-            desc="Real Estate Company Web app"
-            img="https://source.unsplash.com/FeuEg-8XlA8"
-          />
+        <div className="flex flex-col gap-4 mt-10 md:flex-row">
+          <motion.div
+            initial={{ x: +100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1, transition: {
+              ease: 'easeInOut',
+              delay: .2,
+            }}}
+            viewport={{ once: false, amount: .1 }}
+          >
+            <Cards
+              title="Armory Reborn"
+              desc="Up to date news portal. Be the first to know what happened curently"
+              img="/assets/images/porto/Armory-Reborn.jpg"
+            />
+          </motion.div>
+          <motion.div
+            initial={{ x: +100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1, transition: {
+              ease: 'easeInOut',
+              delay: .1
+            }}}
+            viewport={{ once: false, amount: .1 }}
+          >
+            <Cards
+              title="Blublub E-Commerce"
+              desc="E-commerce for diving spot and accessories. Easy way to enjoy your diving trip"
+              img="/assets/images/porto/Blublub.jpg"
+            />
+          </motion.div>
+          <motion.div
+            initial={{ x: +100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1, transition: {
+              ease: 'easeInOut',
+            }}}
+            viewport={{ once: false, amount: .1 }}
+          >
+            <Cards
+              title="Ticket To The Moon"
+              desc="E-commerce for Hammock. The best quality Hammock in Bali"
+              img="/assets/images/porto/TicketToTheMoon.jpg"
+            />
+          </motion.div>
+        </div>
+
+        <div className="mt-12 flex gap-4 flex-col md:flex-row items-center">
+          <Link href="/works">
+            <a className="border-2 border-white-700 bg-white text-blue-700 py-2 px-4 rounded-xl hover:scale-90 hover:shadow-md hover:bg-blue-700 hover:text-white transition duration-500 tracking-wide uppercase text-sm lg:text-lg">
+              See More
+            </a>
+          </Link>
         </div>
       </div>
     </div>

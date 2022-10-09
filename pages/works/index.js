@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Footer from '../../sections/Footer';
 import Navbar from '../../components/Navbar';
+import { motion } from 'framer-motion'
 
 import ShowList from '../../components/works/ShowList';
 import { portoData } from '../../lib/portofolioList';
@@ -31,15 +32,62 @@ function works() {
             </p>
           </div>
 
-          <div className='py-10 px-12'>
-            <h2>Portofolio List</h2>
-            {portoData.map((data, index) => (
+          <div className='px-12'>
+            <div className="mx-auto max-w-2xl py-4 md:py-12 lg:max-w-7xl">
+                {
+                  portoData?.map((item, index) => (
+                    <div key={index} className="w-100 mb-24 relative">
+                      <motion.h3 
+                        initial={{ opacity: 0, x:-100 }} 
+                        whileInView={{ opacity: 1, x: 0 }} 
+                        transition={{ type: "spring", bounce: 0.4, duration: 3 }} 
+                        viewport={{ once: false, amount: 1 }} 
+                        className=" text-white md:text-2xl shadow-xl p-2 md:p-10 md:absolute top-10 z-10  bg-blue-600">
+                          {item.title}
+                      </motion.h3>
+                      <Link href={'works/' + item.path}>
+                        <a>
+                          <motion.img 
+                            initial={{ opacity: 0 }} 
+                            whileInView={{ opacity: 1 }} 
+                            transition={{ type: "spring", bounce: 0.4, duration: 2 }} 
+                            viewport={{ once: false, amount: 0.1 }} 
+                            src={item.img} 
+                            alt="armory reborn" 
+                            className='rounded-xl grayscale md:p-10 lg:p-20 hover:grayscale-0 transition duration-500' title={item.title}/>
+                        </a>
+                      </Link>
+                      <motion.p 
+                        initial={{ opacity: 0, x:+100 }} 
+                        whileInView={{ opacity: 1, x: 0, duration: 6 }} 
+                        transition={{ type: "spring", bounce: 0.4, duration: 4 }} 
+                        viewport={{ once: false, amount: 0.5 }} 
+                        className=" text-gray-500 p-2 md:p-10 shadow-xl md:bottom-10 md:absolute bottom-10 right-0 max-w-sm bg-white">
+                          {item.desc}
+                      </motion.p>
+                    </div>
+                  ))
+                }
+              {/* <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
+              {
+                portoData?.map((data, index) => (
+                  <ShowList key={index}
+                    image={data.img}
+                    title={data.title}
+                    desc={data.desc}
+                    tags={data.tags}
+                    path={data.path} />
+                ))
+              }
+              </div> */}
+            </div>
+            {/* {portoData.map((data, index) => (
                 <Link href={'/works' + data.path} key={index}>
                     <a className='text-blue-700'>
                         <h3 className='text-blue-700'>{data.title}</h3>
                     </a>
                 </Link>
-            ))}
+            ))} */}
           </div>
         </div>
       </main>

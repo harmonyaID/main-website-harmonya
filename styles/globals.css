@@ -35,6 +35,7 @@ a {
 
 .section-title {
   font-size: 3rem;
+  line-height: 1;
 }
 
 @layer components{

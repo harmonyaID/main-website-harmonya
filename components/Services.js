@@ -6,12 +6,19 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
+import { motion } from 'framer-motion'
 
 function Services() {
   return (
     <div className="mt-6 bg-gray-100 py-16 px-[2rem] items-center flex justify-center z-0">
       <div className="flex flex-col gap-6 items-center md:flex-row max-w-[1200px]">
-        <div className="relative bg-white py-5 px-4 text-center flex flex-col items-center justify-center rounded-lg shadow-md group transition duration-500 hover:shadow-xl h-[200px] md:h-[250px] max-h-[400px] z-0">
+        <motion.div 
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1, transition: {
+            ease: 'easeInOut',
+          }}}
+          viewport={{ once: false, amount: .5 }}
+          className="relative bg-white py-5 px-4 text-center flex flex-col items-center justify-center rounded-lg shadow-md group transition duration-500 hover:shadow-xl h-[200px] md:h-[250px] max-h-[400px] z-0">
           <FontAwesomeIcon
             icon={faGlobe}
             className="h-10 group-hover:opacity-0 transition duration-500"
@@ -31,8 +38,15 @@ function Services() {
               </a>
             </Link>
           </div>
-        </div>
-        <div className="relative bg-white py-5 px-4 text-center flex flex-col items-center justify-center rounded-lg shadow-md group transition duration-500 hover:shadow-xl h-[200px] md:h-[250px] max-h-[400px]">
+        </motion.div>
+        <motion.div 
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1, transition: {
+            ease: 'easeInOut',
+            delay: 0.1
+          }}}
+          viewport={{ once: false, amount: .5 }}
+          className="relative bg-white py-5 px-4 text-center flex flex-col items-center justify-center rounded-lg shadow-md group transition duration-500 hover:shadow-xl h-[200px] md:h-[250px] max-h-[400px]">
           <FontAwesomeIcon
             icon={faMobileAndroidAlt}
             className="h-10 group-hover:opacity-0 transition duration-500"
@@ -52,8 +66,15 @@ function Services() {
               </a>
             </Link>
           </div>
-        </div>
-        <div className="relative bg-white py-5 px-4 text-center flex flex-col items-center justify-center rounded-lg shadow-md group transition duration-500 hover:shadow-xl h-[200px] md:h-[250px] max-h-[400px]">
+        </motion.div>
+        <motion.div 
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1, transition: {
+            ease: 'easeInOut',
+            delay: 0.2
+          }}}
+          viewport={{ once: false, amount: .5 }}
+          className="relative bg-white py-5 px-4 text-center flex flex-col items-center justify-center rounded-lg shadow-md group transition duration-500 hover:shadow-xl h-[200px] md:h-[250px] max-h-[400px]">
           <FontAwesomeIcon
             icon={faObjectUngroup}
             className="h-10 group-hover:opacity-0 transition duration-500"
@@ -73,7 +94,7 @@ function Services() {
               </a>
             </Link>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

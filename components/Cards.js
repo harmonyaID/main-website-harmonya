@@ -7,7 +7,7 @@ function Cards({ title, desc, img }) {
         src={img}
         alt="image"
         width={500}
-        height={300}
+        height={600}
         objectFit="cover"
         className="hover:scale-125 transition duration-500 rounded-t-xl"
       />

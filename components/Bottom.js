@@ -13,7 +13,7 @@ function Bottom() {
       <p className="text-center pb-4">Copyright ® Harmonya</p>
       <div className="flex flex-col justify-center items-center md:flex-row md:justify-between xl:px-[2rem]">
         <div className="flex gap-6 mb-5">
-          <Link href="https://github.com/beinawair">
+          <Link href="https://github.com/harmonyaID">
             <a target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon
                 icon={faGithub}
@@ -23,7 +23,7 @@ function Bottom() {
               />
             </a>
           </Link>
-          <Link href="https://www.linkedin.com/in/bayu-starrhiawan/">
+          <Link href="https://www.linkedin.com/in/harmonya-indonesia/">
             <a target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon
                 icon={faLinkedin}
@@ -33,7 +33,7 @@ function Bottom() {
               />
             </a>
           </Link>
-          <Link href="https://www.instagram.com/beinawair/">
+          <Link href="https://www.instagram.com/harmonyaindonesia/">
             <a target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon
                 icon={faInstagram}

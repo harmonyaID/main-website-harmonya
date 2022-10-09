@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "title": "Seed Resort",
+        "desc": "Booking Seed Resort in Bali. Website Portal for Resort's informations",
+        "img": "/assets/images/porto/Resort.jpg",
+        "tags": ["Website Development"],
+        "link": "https://seedresort.com/",
+        "clientName": "Fernando",
+        "companyName": "Seed Resort",
+        "path": "seed-resort"
+    },
+    {
+        "id": 2,
+        "title": "Indonesia Private Investigation",
+        "desc": "Indonesia Private Investigation (IPIA) is a professional detective team to help people in need in Indonesia",
+        "img": "/assets/images/porto/Indonesia-Private-Investigation.jpg",
+        "tags": ["Website Development"],
+        "link": "https://indonesiadetective.com/id/",
+        "clientName": "Paul",
+        "companyName": "IPIA",
+        "path": "indonesia-private-investigation"
+    },
+    {
+        "id": 3,
+        "title": "Blublub E-Commerce",
+        "desc": "E-commerce for diving spot and accessories. Easy way to enjoy your diving trip",
+        "img": "/assets/images/porto/Blublub.jpg",
+        "tags": ["Website E-Commerce"],
+        "link": "https://blublub.co/",
+        "clientName": "Bagas",
+        "companyName": "Blublub",
+        "path": "blublub-e-commerce"
+    },
+    {
+        "id": 4,
+        "title": "Ticket to The Moon",
+        "desc": "E-commerce for Hammock. The best quality Hammock in Bali",
+        "img": "/assets/images/porto/TicketToTheMoon.jpg",
+        "tags": ["Website E-Commerce"],
+        "link": "https://www.ticketothemoon.com/",
+        "clientName": "Fernandez",
+        "companyName": "Tickettothemoon",
+        "path": "ticket-to-the-moon"
+    },
+    {
+        "id": 5,
+        "title": "Armory Reborn",
+        "desc": "Up to date news portal. Be the first to know what happened curently",
+        "img": "/assets/images/porto/Armory-Reborn.jpg",
+        "tags": ["Website Development"],
+        "link": "https://www.armoryreborn.com/",
+        "clientName": "Andi",
+        "companyName": "Armory Reborn",
+        "path": "armory-reborn"
+    }
+]

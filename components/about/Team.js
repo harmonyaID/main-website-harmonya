@@ -10,22 +10,22 @@ function Team() {
       </div>
       <div className="flex gap-2 justify-center flex-col items-center md:flex-row">
         <Cards
-          img="https://media-exp1.licdn.com/dms/image/C5603AQE5Z9zsuMsaBw/profile-displayphoto-shrink_800_800/0/1595149620670?e=1656547200&v=beta&t=XQLNSz4r1O-K_rjpVzYKy9CUn5d5SDNZOuh5CD4OWL4"
+          img="/assets/images/team/Wawan_Rahmawan.jpeg"
           title="Wawan"
           desc="CEO"
         />
         <Cards
-          img="https://media-exp1.licdn.com/dms/image/C5603AQHrZqMIWReQIg/profile-displayphoto-shrink_800_800/0/1644236654450?e=1656547200&v=beta&t=bxcsk_l7twIeLhI7mtiphAaxMOJCZv6NSMQGudmrcKk"
+          img="/assets/images/team/Made_Sudiarta.jpeg"
           title="Sudi"
           desc="CFO"
         />
         <Cards
-          img="https://media-exp1.licdn.com/dms/image/C5603AQEvG3KSBtkPYg/profile-displayphoto-shrink_800_800/0/1637300605498?e=1656547200&v=beta&t=MBarVklDdlIza_OIJy3sKxIaeTFIiJarp_lQ0QmsUZo"
+          img="/assets/images/team/Bayu_Starrhiawan.jpg"
           title="Bayu"
-          desc="CCC"
+          desc="CMO"
         />
         <Cards
-          img="https://media-exp1.licdn.com/dms/image/C5603AQE5Z9zsuMsaBw/profile-displayphoto-shrink_800_800/0/1595149620670?e=1656547200&v=beta&t=XQLNSz4r1O-K_rjpVzYKy9CUn5d5SDNZOuh5CD4OWL4"
+          img="/assets/images/team/Andi_Radita.jpeg"
           title="Andi"
           desc="CTO"
         />

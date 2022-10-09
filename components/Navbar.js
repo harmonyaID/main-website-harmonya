@@ -20,13 +20,17 @@ function Navbar() {
   return (
     <div className="flex justify-between items-center shadow-md w-100 p-0 m-0 bg-white">
       <div className="relative backdrop-blur-xl bg-white/60 py-2 px-[2rem] md:fixed md:px-[2rem] xl:px-[4rem] top-0 left-0 w-full flex justify-between items-center z-50">
-        <Image
-          src="/assets/images/harmonya-digital-agency-logo.svg"
-          width="150"
-          height="77.94"
-          alt="logo"
-          className="cursor-pointer items-center"
-        />
+        <NextLink href="/">
+          <a>
+            <Image
+              src="/assets/images/harmonya-digital-agency-logo.svg"
+              width="150"
+              height="77.94"
+              alt="logo"
+              className="cursor-pointer items-center"
+            />
+          </a>
+        </NextLink>
         <div
           className="flex items-end flex-col hamburger justify-center cursor-pointer h-[40px] w-[40px] lg:hidden"
           onClick={handleClick}
